@@ -1,0 +1,135 @@
+/* ==========================================================================
+   Grow Digital RemarkJS override stylesheet
+   ========================================================================== */
+
+/* Variables
+   ========================================================================== */
+
+:root {
+  /* Background tones (dark) */
+  --dim:          #002b36; /* base03 */
+  --dimmest:      #030303; /* base02 */
+
+  /* Content tones */
+  --gray_dark:   #586e75; /* base01 */
+  --gray_mid:    #657b83; /* base00 */
+  --gray:        #839496; /* base0 */
+  --gray_light:  #93a1a1; /* base1 */
+
+  /* Background tones (bright) */
+  --bright:      #eee8d5; /* base2 */
+  --brightest:   #fdf6e3; /* base3 */
+
+  /* Accent colors */
+  --yellow:  #b58900;
+  --orange:  #cb4b16;
+  --red:     #dc322f;
+  --blue:    #268bd2; 
+  --green:   #859900;
+  --violet:  #6c71c4;
+}
+
+/* Base
+   ========================================================================== */
+
+html {
+  font-size: 16px;
+  line-height: 1.4;
+}
+body {
+  color: var(--gray_light);
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.remark-slide-content li,
+.remark-slide-content p {
+  font-size: 1.8rem;
+}
+
+/* Typography
+   ========================================================================== */
+
+h1 {
+  color: var(--red);
+  line-height: 1.1;
+}
+
+h2 {
+  color: var(--yellow);
+}
+
+h3 {
+  color: var(--orange);
+}
+
+h2, h3 {
+  line-height: 1.2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+blockquote {
+  color: var(--violet);
+  font-style: italic;
+}
+
+.remark-slide-content blockquote p {
+  font-size: 2.4rem;
+}
+
+/* Links
+   ========================================================================== */
+
+a:link,
+a:visited {
+ color: var(--blue);
+ text-decoration: none;
+}
+
+a:hover,
+a:active {
+ color: var(--violet);
+ text-decoration: underline;
+}
+
+/* Custom styles
+   ========================================================================== */
+
+.big {
+  font-size: 3rem;
+}
+
+/* Shame */
+.alternate {
+  background-color: var(--brightest) !important;
+}
+
+
+/* RemarkJS over-writes
+   ========================================================================== */
+
+.remark-container {
+  background-color: var(--gray_dark);
+}
+
+.remark-slide-scaler {
+  box-shadow: 0 0 30px var(--gray_mid);
+}
+
+.remark-slide-content {
+  background-color: var(--dim); 
+}
+
+.remark-slide-content {
+  padding: 1em 3em 1em 3em;
+}
+
+.remark-code-line {
+  font-size: 1.4rem;
+}
